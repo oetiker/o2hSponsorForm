@@ -1,0 +1,33 @@
+{
+  "info" :
+  {
+    "name" : "sponsor",
+
+    "summary" : "O2H Sponsorship",
+    "description" : "This is a skeleton for a custom application with qooxdoo.",
+
+    "homepage" : "https://www.o2h.ch/",
+
+    "license" : "MIT",
+    "authors" :
+    [
+      {
+        "name" : "Tobias Oetiker (oetiker)",
+        "email" : "tobi@oetiker.ch"
+      }
+    ],
+
+    "version" : "master",
+    "qooxdoo-versions": ["5.1"]
+  },
+
+  "provides" :
+  {
+    "namespace"   : "sponsor",
+    "encoding"    : "utf-8",
+    "class"       : "source/class",
+    "resource"    : "source/resource",
+    "translation" : "source/translation",
+    "type"        : "application"
+  }
+}
