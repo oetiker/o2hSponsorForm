@@ -1,0 +1,192 @@
+#: sponsor/ui/Popup.js:17
+msgid "O2H Sponsoring Form"
+msgstr ""
+
+#: sponsor/ui/Page1.js:47
+msgid "Beim 2-Stunden Lauf braucht es Leute die laufen, aber vorallem auch Sponsoren. Hier kannst deine Sponsoringzusage erfassen."
+msgstr ""
+
+#: sponsor/ui/Page1.js:48 sponsor/ui/Page1.js:50
+msgid "Wen möchtest du sponsoren?"
+msgstr ""
+
+#: sponsor/ui/Page1.js:49 sponsor/ui/Page1.js:51
+msgid "Gesuchter Name ..."
+msgstr ""
+
+#: sponsor/ui/Page1.js:78 sponsor/ui/Page1.js:80
+msgid "Welchen Betrag willst du einsetzen?"
+msgstr ""
+
+#: sponsor/ui/Page1.js:79 sponsor/ui/Page1.js:81
+msgid "Fr pro km"
+msgstr ""
+
+#: sponsor/ui/Page1.js:80 sponsor/ui/Page1.js:82
+msgid "Fr/km"
+msgstr ""
+
+#: sponsor/ui/Page1.js:81 sponsor/ui/Page1.js:82
+msgid "Fr Fix"
+msgstr ""
+
+#: sponsor/ui/Page2.js:113 sponsor/ui/Page2.js:135
+msgid "Du erhältst nach dem Lauf von uns eine Rechnung. Dazu brauchen wir einige Angaben von dir."
+msgstr ""
+
+#: sponsor/ui/Page2.js:114 sponsor/ui/Page2.js:136
+msgid "Was ist deine Postadresse?"
+msgstr ""
+
+#: sponsor/ui/Page2.js:115 sponsor/ui/Page2.js:137
+msgid "Vorname"
+msgstr ""
+
+#: sponsor/ui/Page2.js:127 sponsor/ui/Page2.js:149
+msgid "Familienname"
+msgstr ""
+
+#: sponsor/ui/Page2.js:128 sponsor/ui/Page2.js:150
+msgid "Firma"
+msgstr ""
+
+#: sponsor/ui/Page2.js:129 sponsor/ui/Page2.js:151
+msgid "Strasse Nr."
+msgstr ""
+
+#: sponsor/ui/Page2.js:130 sponsor/ui/Page2.js:152
+msgid "PLZ"
+msgstr ""
+
+#: sponsor/ui/Page2.js:131 sponsor/ui/Page2.js:153
+msgid "Ort"
+msgstr ""
+
+#: sponsor/ui/Page2.js:132
+msgid "Was ist deine eMail Adresse?"
+msgstr ""
+
+#: sponsor/ui/Page2.js:133 sponsor/ui/Page2.js:157
+msgid "eMail"
+msgstr ""
+
+#: sponsor/ui/Page2.js:134 sponsor/ui/Page2.js:158
+msgid "Wie soll die Rechnung zugestellt werden?"
+msgstr ""
+
+#: sponsor/ui/Page2.js:135
+msgid "Rechnung im PDF Format per eMail"
+msgstr ""
+
+#: sponsor/ui/Page2.js:144 sponsor/ui/Page2.js:168
+msgid "Gedruckte Rechnung auf Papier"
+msgstr ""
+
+#: sponsor/ui/Page3.js:47
+msgid "Du unterstützt"
+msgstr ""
+
+#: sponsor/ui/Page3.js:49
+msgid "Deine Adresse"
+msgstr ""
+
+#: sponsor/ui/Page3.js:51
+msgid "Zustellung der Rechnung"
+msgstr ""
+
+#: sponsor/ui/Page3.js:53
+msgid "Sind deine Angaben korrekt?"
+msgstr ""
+
+#: sponsor/ui/Page3.js:54
+msgid "Wenn die obigen Angaben OK sind, tippe auf der Zeile unten bitte den Bestätigungscode ein. Den Code hast du soeben per eMail erhalten!"
+msgstr ""
+
+#: sponsor/ui/Page3.js:55
+msgid "Bestätigungscode"
+msgstr ""
+
+#: sponsor/ui/Page3.js:96
+msgid "Bestätigen"
+msgstr ""
+
+#: sponsor/ui/Page3.js:97
+msgid "Ändern"
+msgstr ""
+
+#: sponsor/ui/PageBase.js:29
+msgid "Weiter"
+msgstr ""
+
+#: sponsor/ui/PageBase.js:35
+msgid "Zurück"
+msgstr ""
+
+#: sponsor/ui/Page1.js:47 sponsor/ui/Page1.js:49
+msgid "Beim 2-Stunden Lauf braucht es Leute die laufen, aber vor allem auch Sponsoren. Hier kannst deine Sponsoringzusage erfassen."
+msgstr ""
+
+#: sponsor/ui/Page1.js:81 sponsor/ui/Page1.js:82 sponsor/ui/Page1.js:83
+#: sponsor/ui/Page1.js:84
+msgid "Fr fix"
+msgstr ""
+
+#: sponsor/ui/Page2.js:132 sponsor/ui/Page2.js:156
+msgid "Was ist deine eMail-Adresse?"
+msgstr ""
+
+#: sponsor/ui/Page2.js:135 sponsor/ui/Page2.js:159
+msgid "Rechnung im PDF-Format per eMail"
+msgstr ""
+
+#: sponsor/ui/Page2.js:70
+msgid "die Postleitzahl"
+msgstr ""
+
+#: sponsor/ui/Page2.js:73
+msgid "der Ort"
+msgstr ""
+
+#: sponsor/ui/Page2.js:76
+msgid "die Strasse"
+msgstr ""
+
+#: sponsor/ui/Page2.js:79
+msgid "die Hausnummer"
+msgstr ""
+
+#: sponsor/ui/Page2.js:82
+msgid "der Nachname"
+msgstr ""
+
+#: sponsor/ui/Page2.js:85
+msgid "der Vorname"
+msgstr ""
+
+#: sponsor/ui/Page2.js:70 sponsor/ui/Page2.js:82
+msgid "die eingegebene Postleitzahl"
+msgstr ""
+
+#: sponsor/ui/Page2.js:73 sponsor/ui/Page2.js:85
+msgid "der eingegebene Ort"
+msgstr ""
+
+#: sponsor/ui/Page2.js:76 sponsor/ui/Page2.js:79
+msgid "die eingegebene Strasse"
+msgstr ""
+
+#: sponsor/ui/Page2.js:79 sponsor/ui/Page2.js:76
+msgid "die eingegebene Hausnummer"
+msgstr ""
+
+#: sponsor/ui/Page2.js:82 sponsor/ui/Page2.js:73
+msgid "der eingegebene Nachname"
+msgstr ""
+
+#: sponsor/ui/Page2.js:85 sponsor/ui/Page2.js:70
+msgid "der eingegebene Vorname"
+msgstr ""
+
+#: sponsor/ui/Page2.js:70 sponsor/ui/Page2.js:73
+msgid "der eingegebene Vorname+Nachname"
+msgstr ""

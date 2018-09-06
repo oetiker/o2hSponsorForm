@@ -11,11 +11,13 @@
  */
 qx.Class.define("sponsor.ui.Page1", {
     extend: sponsor.ui.PageBase,
-
+    /**
+     * Demo Doc
+     */
     construct: function(data) {
         this.base(arguments, data,"1");
-        this.addListener('appear',function(){
-          var tabs = this.getTabs();
+        this.addListener('appear',() => {
+          let tabs = this.getTabs();
           if (tabs.length>2){
             tabs[1].setEnabled(false);
             tabs[2].setEnabled(false);
@@ -44,7 +46,7 @@ qx.Class.define("sponsor.ui.Page1", {
             return !!(d.part && ( d.FrKm > 0 || d.FrFix > 0 )) ;
         },
         _populate: function(){
-            this.addLabel(this.tr("Beim 2-Stunden Lauf braucht es Leute die laufen, aber vorallem auch Sponsoren. Hier kannst deine Sponsoringzusage erfassen."));
+            this.addLabel(this.tr("Beim 2-Stunden Lauf braucht es Leute die laufen, aber vor allem auch Sponsoren. Hier kannst deine Sponsoringzusage erfassen."));
             this.addTitle(this.tr("Wen möchtest du sponsoren?"));
             var search = this.addTextField('searchText',this.tr('Gesuchter Name ...'));
             var found = window.location.hash.match('q=([^&]+)');
@@ -78,8 +80,8 @@ qx.Class.define("sponsor.ui.Page1", {
             this.addTitle(this.tr("Welchen Betrag willst du einsetzen?"));
             this.addTextField("FrKm",this.tr("Fr pro km"),3);
             this.addLabel(this.tr("Fr/km"),3);
-            this.addTextField("FrFix",this.tr("Fr Fix"),3);
-            this.addLabel(this.tr("Fr Fix"),3);
+            this.addTextField("FrFix",this.tr("Fr fix"),3);
+            this.addLabel(this.tr("Fr fix"),3);
 
             this._nextBtn.addListener("execute", function() {
                 if (this._check()){

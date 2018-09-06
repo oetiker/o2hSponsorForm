@@ -22,6 +22,7 @@
          },this);
      },
      members: {
+        _addressNote: null,
         _check: function(okCb){
             var ok = true;
             var address = {};
@@ -53,6 +54,7 @@
             req.addListener('success', function (e) {
                 var req = e.getTarget();
                 var res = req.getResponse();
+                var problem = null;
                 var data = {};
                 if (!res.Body || !res.Body.rows || res.Body.rows.length == 0) {
                     ok = false;
@@ -64,7 +66,24 @@
                 if (!data.AdressOfficial || !data.NameCurrentlyValid || !data.NameFirstNameCurrentlyValid){
                     ok = false;
                 };
-
+                if (!data.NameFirstNameCurrentlyValid){
+                    problem = this.tr("der eingegebene Vorname+Nachname");
+                }
+                if (!data.NameCurrentlyValid){
+                    problem = this.tr("der eingegebene Vorname+Nachname");
+                }
+                if (!data.HouseNbrValid){
+                    problem = this.tr("die eingegebene Hausnummer");
+                }
+                if (!data.StreetValid){
+                    problem = this.tr("die eingegebene Strasse");
+                }
+                if (!data.ZipValid){
+                    problem = this.tr("die eingegebene Postleitzahl");
+                }
+                if (!data.TownValid){
+                    problem = this.tr("der eingegebene Ort");
+                }
                 this.getField('Zip').setValid(!!data.ZipValid);
                 if (data.TownOfficial && data.Town18) {
                     this.getField('Town').set({
@@ -72,7 +91,7 @@
                         value: data.Town18
                     });
                 } else {
-                  ok = false;
+                    ok = false;
                     this.getField('Town').setValid(false);
                 }
                 if (!!data.StreetOfficial && !!data.HouseNbrValid) {
@@ -98,7 +117,9 @@
                         valid: !!data.NameCurrentlyValid
                     });
                 }
-
+                if (problem){
+                    this._addressNote.setValue("Laut Angaben des Adresscheckers der Post ist "+ problem + " unbekannt.")
+                }
                 if (ok && okCb){
                     okCb();
                 }
@@ -108,6 +129,7 @@
                 console.log(req);
             }, this);
             req.send();
+            this._addressNote.setValue(null);
         },
         _populate: function(){
             this.addLabel(this.tr("Du erhältst nach dem Lauf von uns eine Rechnung. Dazu brauchen wir einige Angaben von dir."));
@@ -129,10 +151,12 @@
             this.addTextField("StreetAddress",this.tr("Strasse Nr."),12,"street-address");
             this.addTextField("Zip",this.tr("PLZ"),3,"postal-code");
             this.addTextField("Town",this.tr("Ort"),9,"address-level2");
-            this.addTitle(this.tr("Was ist deine eMail Adresse?"));
+            this._addressNote = this.addLabel('',12).set({textColor: 'red'});
+
+            this.addTitle(this.tr("Was ist deine eMail-Adresse?"));
             this.addTextField("eMail",this.tr("eMail"),12,"email");
             this.addTitle(this.tr("Wie soll die Rechnung zugestellt werden?"));
-            var rPdf = new qx.ui.form.RadioButton(this.tr("Rechnung im PDF Format per eMail")).set({
+            var rPdf = new qx.ui.form.RadioButton(this.tr("Rechnung im PDF-Format per eMail")).set({
                 model: 'eMail'
             });
 

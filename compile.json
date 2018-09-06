@@ -25,7 +25,7 @@
   ],
 
   "libraries": [
-    "/scratch/oetiker/qxtest/qooxdoo/framework",
+    "./node_modules/qooxdoo-sdk/framework/",
     "."
   ]
 }
