@@ -22,10 +22,5 @@
       "theme": "sponsor.theme.Theme",
       "name": "sponsor"
     }
-  ],
-
-  "libraries": [
-    "./node_modules/qooxdoo-sdk/framework/",
-    "."
   ]
 }

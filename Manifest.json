@@ -1,33 +1,23 @@
 {
-  "info" :
-  {
-    "name" : "sponsor",
-
-    "summary" : "O2H Sponsorship",
-    "description" : "This is a skeleton for a custom application with qooxdoo.",
-
-    "homepage" : "https://www.o2h.ch/",
-
-    "license" : "MIT",
-    "authors" :
-    [
-      {
-        "name" : "Tobias Oetiker (oetiker)",
-        "email" : "tobi@oetiker.ch"
-      }
-    ],
-
-    "version" : "master",
-    "qooxdoo-versions": ["5.1"]
+  "info": {
+    "name": "sponsor",
+    "summary": "O2H Sponsorship",
+    "description": "This is a skeleton for a custom application with qooxdoo.",
+    "homepage": "https://www.o2h.ch/",
+    "license": "MIT",
+    "authors": [],
+    "version": "1.0.0"
   },
-
-  "provides" :
-  {
-    "namespace"   : "sponsor",
-    "encoding"    : "utf-8",
-    "class"       : "source/class",
-    "resource"    : "source/resource",
-    "translation" : "source/translation",
-    "type"        : "application"
+  "provides": {
+    "namespace": "sponsor",
+    "encoding": "utf-8",
+    "class": "source/class",
+    "resource": "source/resource",
+    "translation": "source/translation"
+  },
+  "$schema": "https://raw.githubusercontent.com/qooxdoo/qooxdoo-compiler/master/source/resource/qx/tool/schema/Manifest-1-0-0.json",
+  "requires": {
+    "@qooxdoo/compiler": "^1.0.0-beta.20190708-0855",
+    "@qooxdoo/framework": "^6.0.0-beta-20190707-1449"
   }
 }

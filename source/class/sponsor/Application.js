@@ -36,8 +36,8 @@ qx.Class.define("sponsor.Application",
         // support additional cross-browser console. Press F7 to toggle visibility
         qx.log.appender.Console;
       }
-      var deco =  new qx.ui.decoration.Decorator('#ff0049').set({
-          backgroundColor : '#ff0049'
+      var deco =  new qx.ui.decoration.Decorator('#348bac').set({
+          backgroundColor : '#348bac'
       });
       var scroll = new qx.ui.container.Scroll();
       var currentPopup;

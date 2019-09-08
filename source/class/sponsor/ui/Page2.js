@@ -33,7 +33,7 @@
                 }
             },this);
             var email = this.getFieldValue('eMail');
-            var emailOk = (!!email && !!email.match(/^\S+@\S+$/));
+            var emailOk = (!!email && !!email.match(/^\s*\S+@\S+\s*$/));
             this.getField('eMail').setValid(emailOk);
             if (!emailOk){
                return false;
